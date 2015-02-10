@@ -1,1 +1,36 @@
 git命令
+1.创建版本库
+在目录下使用git init命令
+2.添加文件
+两步：git add <file>
+git commit -m "xxxx"
+
+git diff <filename>看修改在内容
+git status看有哪些文件修改。
+
+修改的文件要commit也要先运行
+git add 命令
+然后用git commit
+
+版本回退：
+先用git log看修改日志
+可以用git log --pretty=oneline
+回退用git reset命令
+当前版本为HEAD
+前一版本为HEAD^
+再往前一个版本为HEAD^^
+再往前多个的话为HEAD~39
+
+git reset --hard HEAD^
+git reset --hard commit_id
+
+git reflog看命令历史
+
+只有用git add后才能提交
+而且在执行git add后修改在东西要再次
+git add否则提交的话是上次add的东西
+
+用git diff HEAD -- readme.txt命令
+可以查看工作区和版本库里面最新版本的区别
+
+git checkout -- <filename>为撤销修改
