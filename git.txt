@@ -34,3 +34,6 @@ git add否则提交的话是上次add的东西
 可以查看工作区和版本库里面最新版本的区别
 
 git checkout -- <filename>为撤销修改
+
+git reset HEAD file可以把暂存区的修改撤销掉（unstage），
+重新放回工作区
